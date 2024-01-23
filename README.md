@@ -23,9 +23,9 @@
     }
     ```
 
-3. Run certbot container and check result with --dry-run option
+3. Run certbot container and check result with `--dry-run` option
     ```bash
-    docker compose run --rm --dry-run certbot certonly --webroot --webroot-path /var/www/certbot/ --non-interactive --agree-tos --email your_email@example.com -d example.com
+    docker compose run --rm certbot certonly --dry-run --webroot --webroot-path /var/www/certbot/ --non-interactive --agree-tos --email your_email@example.com -d example.com
     ```
 
 4. Run certbot container and getting certs
